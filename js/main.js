@@ -195,32 +195,18 @@ function erpopup(message) {
 
 
 function parseCart() {
-  const raw = document.cookie;
-  if (!raw || raw.trim() === '' || raw.trim() === ':') return [];
-  const items = [];
-  const segments = raw.split(':');
-  for (let i = 1; i < segments.length; i++) {
-    const parts = segments[i].split(',');
-    if (parts.length >= 4) {
-      items.push({
-        name: parts[0].replace(/_/g, ' '),
-        qty: parseInt(parts[1]) || 1,
-        price: parseInt(parts[2]) || 0,
-        total: parseInt(parts[3]) || 0
-      });
-    }
+  const raw = localStorage.getItem('cart');
+  if (!raw) return [];
+  try {
+    return JSON.parse(raw);
+  } catch (e) {
+    return [];
   }
-  return items;
 }
 
 
 function clearAllCookies() {
-  document.cookie.split(';').forEach(c => {
-    const name = c.split('=')[0].trim();
-    if (name) document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
-  });
-  
-  document.cookie = '; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
+  localStorage.removeItem('cart');
 }
 
 function cart() {

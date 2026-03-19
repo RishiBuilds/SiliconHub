@@ -9,9 +9,8 @@
   <script src="../js/main.js"></script><script>
   function addcart()
 {
-	var output="";
 	var check="false";
-	output+=document.cookie;
+	let cart = JSON.parse(localStorage.getItem("cart") || "[]");
 	if (document.getElementById("r-1").checked)
 	{
 		check="true";
@@ -66,7 +65,7 @@
 	}
 	else
 	{
-		document.cookie=output;
+		localStorage.setItem("cart", JSON.stringify(cart));
 		popup('Items added to cart successfully');
 		 
 		document.getElementById("r-1").checked = false;

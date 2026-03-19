@@ -31,6 +31,11 @@ function generateCaptcha() {
 
 
 document.addEventListener("DOMContentLoaded", function () {
+  if (sessionStorage.getItem("authToken")) {
+    window.location.href = "index.html";
+    return;
+  }
+
   generateCaptcha();
 
   var form = document.getElementById("loginForm");
@@ -51,18 +56,41 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      if (username === "admin" && password === "admin") {
-        message.textContent = "Login Successful!";
-        message.style.color = "#4CAF50";
-        setTimeout(function () {
-          window.location.href = "index.html";
-        }, 1500);
-      } else {
-        message.textContent = "Invalid Username or Password!";
-        message.style.color = "red";
-        generateCaptcha();
-        document.getElementById("captchaInput").value = "";
+      message.textContent = "Authenticating...";
+      message.style.color = "#FF8C00";
+      
+      const btn = form.querySelector('button[type="submit"]') || form.querySelector('input[type="submit"]') || form.querySelector('.lbutton');
+      if (btn) btn.disabled = true;
+
+      function mockLoginAPI(user, pass) {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            if (user === "admin" && pass === "admin") {
+              resolve({ token: "mock_jwt_token_123456789", user: "Admin" });
+            } else {
+              reject(new Error("Invalid Credentials"));
+            }
+          }, 800);
+        });
       }
+
+      mockLoginAPI(username, password)
+        .then((response) => {
+          message.textContent = "Login Successful! Redirecting...";
+          message.style.color = "#4CAF50";
+          sessionStorage.setItem("authToken", response.token);
+          sessionStorage.setItem("userName", response.user);
+          setTimeout(function () {
+            window.location.href = "index.html";
+          }, 1000);
+        })
+        .catch((error) => {
+          message.textContent = "Invalid Username or Password!";
+          message.style.color = "red";
+          generateCaptcha();
+          document.getElementById("captchaInput").value = "";
+          if (btn) btn.disabled = false;
+        });
     });
   }
 });
