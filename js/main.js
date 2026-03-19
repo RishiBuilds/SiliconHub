@@ -32,6 +32,20 @@ function startCarouselTimer() {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  const loginText = document.getElementById('login-text');
+  const loginLink = document.getElementById('login-link');
+  if (loginText && loginLink) {
+    if (sessionStorage.getItem('authToken')) {
+      loginText.textContent = 'Logout';
+      loginLink.onclick = (e) => {
+        e.preventDefault();
+        sessionStorage.removeItem('authToken');
+        sessionStorage.removeItem('userName');
+        window.location.reload();
+      };
+    }
+  }
+
   const carousel = document.querySelector('.carousel');
   if (!carousel) return;
 
@@ -264,7 +278,7 @@ function buy() {
 <table><thead><tr><th>#</th><th>Product</th><th>Qty</th><th>Unit Price</th><th>Total</th></tr></thead><tbody>${rows}</tbody></table>
 <p class="total">Grand Total: <span>Rs ${grandTotal.toLocaleString('en-IN')}/-</span></p>
 <button class="print-btn" onclick="window.print()">🖨 Print Invoice</button>
-<p class="footer">Thank you for shopping at Silicon-Hub! &copy; 2024 Programmers.</p>
+<p class="footer">Thank you for shopping at Silicon-Hub! &copy; 2026 Programmers.</p>
 </body></html>`;
 
   const win = window.open('', '_blank');
