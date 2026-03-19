@@ -9,9 +9,14 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/STATUS-ACTIVE-00BFFF?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/badge/FRONTEND-HTML%20|%20CSS%20|%20JAVASCRIPT-8A2BE2?style=for-the-badge" alt="Frontend">
+  <img src="https://img.shields.io/badge/VERSION-1.0-2ECC71?style=for-the-badge" alt="Version">
+  <br>
+  <a href="https://github.com/RishiBuilds/SiliconHub"><img src="https://img.shields.io/badge/REPOSITORY-GITHUB-0D1117?style=for-the-badge&logo=github" alt="Repository"></a>
+  <a href="mailto:rishi.chaurasia.dev@outlook.com"><img src="https://img.shields.io/badge/CONTACT-GMAIL-EA4335?style=for-the-badge&logo=gmail" alt="Contact"></a>
+  <br>
+  <a href="https://rishibuilds.github.io/SiliconHub/"><img src="https://img.shields.io/badge/LIVE%20DEMO-GITHUB%20PAGES-00E676?style=for-the-badge&logo=github" alt="Live Demo"></a>
 </p>
 
 ---
