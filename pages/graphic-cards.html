@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silicon-Hub - Graphics Cards</title>
+  <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+  <h1>
+    <div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4z"/>
+        <path d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.5 6.5 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8s-3.809-.317-5.208-.876a6.5 6.5 0 0 1-1.458-.79z"/>
+        <path d="M14.667 11.668a6.5 6.5 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.5 6.5 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667z"/>
+      </svg>
+      Silicon-Hub
+    </div>
+    <div>
+      <input type="search" id="serch" name="search" value="Graphics Cards" placeholder="Search components…">
+      <button onclick="serch()" id="search-button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg>
+      </button>
+    </div>
+    <div>
+      <button onclick="cart()" id="btn-cart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5M3.14 5l.5 2H5V5zM6 5v2h2V5zm3 0v2h2V5zm3 0v2h1.36l.5-2zm1.11 3H12v2h.61zM11 8H9v2h2zM8 8H6v2h2zM5 8H3.89l.5 2H5zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0m9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0"/>
+        </svg> Cart
+      </button>
+      &nbsp;
+      <a href="../index.html" aria-label="Home">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+        </svg>
+      </a>
+    </div>
+  </h1>
+  </header>
+
+  <div class="navcont">
+    <div><a href="cooling-fans.html"><input class="link fan" value="Cooling Fans" type="button"></a></div>
+    <div><a href="graphic-cards.html"><input class="link graphics-card" value="Graphics Cards" type="button"></a></div>
+    <div><a href="motherboards.html"><input class="link motherboard" value="Motherboards" type="button"></a></div>
+    <div><a href="processors.html"><input class="link processor" value="Processors (CPU)" type="button"></a></div>
+    <div><a href="ram.html"><input class="link ram" value="RAM" type="button"></a></div>
+    <div><a href="power-supply.html"><input class="link smps" value="Power Supply (SMPS)" type="button"></a></div>
+    <div><a href="ssd.html"><input class="link ssd" value="SSD" type="button"></a></div>
+  </div>
+
+  <table class="table-com">
+    <tbody>
+      <tr>
+        <td>
+          <a href="../assets/images/graphic-cards/GiGABYTE_3060_gta_rtx_force.png" target="_blank">
+            <img style="width:250px;height:200px;" src="../assets/images/graphic-cards/GiGABYTE_3060_gta_rtx_force.png" alt="Gigabyte GeForce RTX 3060" loading="lazy">
+          </a>
+        </td>
+        <td>
+          <h2>Gigabyte RTX 3060 Gaming OC</h2>
+          <p>Gigabyte GeForce RTX 3060 WINDFORCE OC 12GB GDDR6 Graphics Card - triple WINDFORCE fans, RGB Fusion 2.0, LHR version.</p>
+          <b>Items left:</b> <span id="b1"></span><br><br>
+          <span style="color:red;text-decoration:line-through;">Rs 20000/-</span>
+          <h3>Rs 18999/-</h3>
+          Add to cart <input class="Add" id="g-1" type="checkbox"> &nbsp; Qty: <input class="qty" id="g-1-q" min="1" max="99" value="1" type="number"><br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="../assets/images/graphic-cards/GLAX_GeForce_4060_8gb.png" target="_blank">
+            <img style="width:250px;height:250px;" src="../assets/images/graphic-cards/GLAX_GeForce_4060_8gb.png" alt="GALAX GeForce RTX 4060 8GB" loading="lazy">
+          </a>
+        </td>
+        <td>
+          <h2>GALAX GeForce RTX 4060 Ti 8GB</h2>
+          <p>Galax GeForce RTX™ 4060 Ti 8GB 1-Click OC - 8GB GDDR6, 128-bit, DP×3 / HDMI 2.1, DLSS 3.</p>
+          <b>Items left:</b> <span id="b2"></span><br><br>
+          <span style="color:red;text-decoration:line-through;">Rs 50300/-</span>
+          <h3>Rs 39999/-</h3>
+          Add to cart <input class="Add" id="g-2" type="checkbox"> &nbsp; Qty: <input class="qty" id="g-2-q" min="1" max="99" value="1" type="number"><br>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="../assets/images/graphic-cards/ROG_HERculux_graphic_card.png" target="_blank">
+            <img style="width:250px;height:200px;" src="../assets/images/graphic-cards/ROG_HERculux_graphic_card.png" alt="ASUS ROG Herculux GPU Support Bracket" loading="lazy">
+          </a>
+        </td>
+        <td>
+          <h2>ASUS ROG Herculux GPU Bracket</h2>
+          <p>ASUS ROG Herculux Graphics Card Holder - tool-free design, Aura Sync RGB, solid zinc alloy construction, spirit level included.</p>
+          <b>Items left:</b> <span id="b3"></span><br><br>
+          <span style="color:red;text-decoration:line-through;">Rs 40000/-</span>
+          <h3>Rs 29999/-</h3>
+          Add to cart <input class="Add" id="g-3" type="checkbox"> &nbsp; Qty: <input class="qty" id="g-3-q" min="1" max="99" value="1" type="number"><br>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+
+  <table class="table-img">
+    <tbody>
+      <tr>
+        <td>
+          <h3>RGB RAM</h3>
+          <img style="width:100px;height:100px;" src="../assets/images/ram/CorSair_RGB_ddr4_32_gb_ram.png" alt="Corsair RGB DDR4 32GB" loading="lazy">
+          &nbsp;&nbsp;
+          <img style="width:100px;height:100px;" src="../assets/images/ram/Curial_Pro_64_gb_ram_kit_ddr4.png" alt="Crucial Pro 64GB DDR4" loading="lazy">
+          <br><br>
+          <img style="width:100px;height:100px;" src="../assets/images/ram/G-SKILL_RGB__2x16_gb_ram.png" alt="G.Skill 2x16GB RGB" loading="lazy">
+          &nbsp;&nbsp;
+          <img style="width:100px;height:100px;" src="../assets/images/ram/Lexar__2x16__gb_ram_ddr5.png" alt="Lexar 2x16GB DDR5" loading="lazy">
+        </td>
+        <td>
+          <h3>850W Power Supply RGB</h3>
+          <img style="width:220px;height:220px;" src="../assets/images/power-supply/Redragon_psu007_850_watt_rgb_smps.png" alt="Redragon 850W RGB SMPS" loading="lazy">
+        </td>
+        <td>
+          <h3>SSD (Solid State Drive)</h3>
+          <img style="width:220px;height:90px;" src="../assets/images/ssd/PNY_rgb_1tb_ssd.png" alt="PNY RGB 1TB SSD" loading="lazy">
+          <br><br>
+          <h3>Processors (CPU)</h3>
+          <img style="width:100px;height:100px;" src="../assets/images/processors/i9_24core.png" alt="Intel i9 24-core" loading="lazy">
+          &nbsp;&nbsp;
+          <img style="width:100px;height:100px;" src="../assets/images/processors/AMD_Ryzen_9.png" alt="AMD Ryzen 9" loading="lazy">
+        </td>
+        <td>
+          <h3>Motherboards</h3>
+          <img style="width:220px;height:220px;" src="../assets/images/motherboards/Gigabyte_B550_Gaming.png" alt="Gigabyte B550 Gaming" loading="lazy">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="navbar">
+    <input value="Purchase" class="buy" onclick="return buy()" type="button">
+    &nbsp;
+    <button onclick="return addcart()" id="btn-addcart">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0"/>
+      </svg>
+      Add to Cart
+    </button>
+    <button onclick="return clrcart()" id="btn-clrcart">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0m7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0M7.354 5.646 8.5 6.793l1.146-1.147a.5.5 0 0 1 .708.708L9.207 7.5l1.147 1.146a.5.5 0 0 1-.708.708L8.5 8.207 7.354 9.354a.5.5 0 1 1-.708-.708L7.793 7.5 6.646 6.354a.5.5 0 1 1 .708-.708"/>
+      </svg>
+      Clear Cart
+    </button>
+    <a href="inventory.html">
+      <button id="btn-inventory">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4z"/>
+          <path d="M1.333 6.334v3C1.333 10.805 4.318 12 8 12s6.667-1.194 6.667-2.667V6.334a6.5 6.5 0 0 1-1.458.79C11.81 7.684 9.967 8 8 8s-3.809-.317-5.208-.876a6.5 6.5 0 0 1-1.458-.79z"/>
+          <path d="M14.667 11.668a6.5 6.5 0 0 1-1.458.789c-1.4.56-3.242.876-5.21.876-1.966 0-3.809-.316-5.208-.876a6.5 6.5 0 0 1-1.458-.79v1.666C1.333 14.806 4.318 16 8 16s6.667-1.194 6.667-2.667z"/>
+        </svg>
+        Inventory
+      </button>
+    </a>
+    <a id="backToTopBtn" role="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+      </svg>
+    </a>
+  </div>
+  <br><br><br>
+
+  <script src="../js/main.js"></script>
+  <script>
+    document.getElementById('backToTopBtn').onclick = function () {
+      window.scrollTo({ top: 0, behavior: 'smooth' }); return false;
+    };
+
+    var b1 = sessionStorage.getItem('b1'); document.getElementById('b1').textContent = b1 || '-';
+    var b2 = sessionStorage.getItem('b2'); document.getElementById('b2').textContent = b2 || '-';
+    var b3 = sessionStorage.getItem('b3'); document.getElementById('b3').textContent = b3 || '-';
+
+    function addcart() {
+      var output = document.cookie;
+      var check = false;
+
+      if (document.getElementById('g-1').checked) {
+        check = true;
+        var qty = parseInt(document.getElementById('g-1-q').value) || 1;
+        var p = 18999, tp = p * qty;
+        sessionStorage.setItem('b1', (parseInt(sessionStorage.getItem('b1')) || 0) - qty);
+        output += ':GiGABYTE_RTX3060,' + qty + ',' + p + ',' + tp;
+      }
+      if (document.getElementById('g-2').checked) {
+        check = true;
+        var qty = parseInt(document.getElementById('g-2-q').value) || 1;
+        var p = 39999, tp = p * qty;
+        sessionStorage.setItem('b2', (parseInt(sessionStorage.getItem('b2')) || 0) - qty);
+        output += ':GALAX_GeForce4060,' + qty + ',' + p + ',' + tp;
+      }
+      if (document.getElementById('g-3').checked) {
+        check = true;
+        var qty = parseInt(document.getElementById('g-3-q').value) || 1;
+        var p = 29999, tp = p * qty;
+        sessionStorage.setItem('b3', (parseInt(sessionStorage.getItem('b3')) || 0) - qty);
+        output += ':ROG_Herculux_Bracket,' + qty + ',' + p + ',' + tp;
+      }
+
+      if (!check) {
+        erpopup('Please select at least one item!');
+      } else {
+        document.cookie = output;
+        popup('Items added to cart successfully!');
+        ['g-1','g-2','g-3'].forEach(id => { document.getElementById(id).checked = false; });
+        ['g-1-q','g-2-q','g-3-q'].forEach(id => { document.getElementById(id).value = 1; });
+        setTimeout(() => location.reload(), 2500);
+      }
+    }
+  </script>
+</body>
+</html>
