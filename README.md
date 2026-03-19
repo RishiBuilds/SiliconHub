@@ -31,7 +31,7 @@ It features a clever, purely client-side architecture—complete with a `localSt
 - **Search & Routing**: Fast client-side keyword mapping for near-instant navigation between product categories.
 - **Premium Aesthetics**: Smooth micro-animations, text typewriter effects, CSS gradients, dynamic popups, and custom interactive carousels.
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - **HTML5**: Semantic and highly structured markup.
 - **CSS3**: Vanilla CSS with advanced Grid mapping, gradients, responsive breakpoints, and custom keyframe animations.
